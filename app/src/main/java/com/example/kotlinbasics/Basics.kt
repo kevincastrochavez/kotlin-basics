@@ -20,7 +20,8 @@ fun main(){
 
     val myStr = "Hello World"
     var firstCharStr = myStr[0]
-    print(firstCharStr)
+//    val myLength = myStr.length
+    print("First character $firstCharStr and the length is ${myStr.length}")
 }
 
 // Normal function
