@@ -12,6 +12,15 @@ fun main(){
     var myAge: Int = 25
     val myFloat: Float = 34.45F
     val myInt: Double = 3.1416323534545
+    var isSunny: Boolean = true
+    isSunny = false
+
+    val letterChar = "A"
+    val digitChar = "1"
+
+    val myStr = "Hello World"
+    var firstCharStr = myStr[0]
+    print(firstCharStr)
 }
 
 // Normal function
