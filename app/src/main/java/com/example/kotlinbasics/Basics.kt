@@ -116,14 +116,25 @@ fun main(){
 //        println("$i")
 //    }
 
-    for (i in 1 until 20) {
-        print("$i ")
-        if (i / 2 == 5) {
-//            break
-            continue
-        }
-    }
+//    for (i in 1 until 20) {
+//        print("$i ")
+//        if (i / 2 == 5) {
+////            break
+//            continue
+//        }
+//    }
+//    myFuncction()
+    var addition = addUp(3, 4)
+    println(addition)
 }
+
+fun addUp(a: Int, b: Int): Int {
+    return a + b
+}
+
+//fun myFuncction() {
+//    println("Called function")
+//}
 
 // Normal function
 //fun hello(){
