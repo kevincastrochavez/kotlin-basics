@@ -35,7 +35,23 @@ fun main(){
     myNum++
     --myNum
 
-    print(myNum)
+//    print(myNum)
+
+    var heightPerson1 = 170
+    var heightPerson2 = 189
+
+    if (heightPerson1 > heightPerson2) {
+        print("This is crazy")
+    } else if (heightPerson1 == heightPerson2) {
+       print("Equals case")
+    } else {
+        print("This is true")
+    }
+
+//    Second way of writing if statements
+    var isRainy = true
+    if (isRainy)
+        print("It's rainy")
 }
 
 // Normal function
