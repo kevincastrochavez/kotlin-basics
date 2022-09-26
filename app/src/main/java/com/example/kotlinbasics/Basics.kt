@@ -127,17 +127,27 @@ fun main(){
 //    var addition = addUp(3, 4)
 //    println(addition)
 
-//    NULLABLES
+////    NULLABLES
+//
+//    var name: String = "Dennis"
+//    name = null
+//
+//    var nullableName: String? = "Kevin"
+//    nullableName = null
+//
+//    if (nullableName != null) {
+//
+//    }
 
-    var name: String = "Dennis"
-    name = null
 
+//    ELVIS OPERATOR
+
+//    If it doesn't have a value, assigns the default after the colon
     var nullableName: String? = "Kevin"
-    nullableName = null
+    val name = nullableName ?: "Guest"
 
-    if (nullableName != null) {
+//    val wifesAge = String? = user?.wife?.age ?: 0
 
-    }
 }
 
 //fun addUp(a: Int, b: Int): Int {
