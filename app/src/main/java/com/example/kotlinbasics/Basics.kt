@@ -89,17 +89,32 @@ fun main(){
 
 //    WHILE LOOPS
 
-    var x = 0
-    while (x <= 10) {
-        println(x)
-        x++
+//    var x = 0
+//    while (x <= 10) {
+//        println(x)
+//        x++
+//    }
+//
+//    var y = 0
+//    do {
+//        println(y)
+//        y++
+//    } while (y <= 10)
+
+
+//    FOR LOOPS
+
+    for (num in 1..10) {
+        println("$num")
     }
 
-    var y = 0
-    do {
-        println(y)
-        y++
-    } while (y <= 10)
+    for (i in 1 until 10) {
+        println("$i")
+    }
+
+    for (i in 10 downTo  1 step 2) {
+        println("$i")
+    }
 }
 
 // Normal function
