@@ -21,7 +21,14 @@ fun main(){
     val myStr = "Hello World"
     var firstCharStr = myStr[0]
 //    val myLength = myStr.length
-    print("First character $firstCharStr and the length is ${myStr.length}")
+//    print("First character $firstCharStr and the length is ${myStr.length}")
+
+    var result = (5.0 / 3)
+//    var result = (5.0 / 3).toInt()
+//    print(result)
+
+    val isEqual = 5 == 5
+    print("isEqual is $isEqual")
 }
 
 // Normal function
