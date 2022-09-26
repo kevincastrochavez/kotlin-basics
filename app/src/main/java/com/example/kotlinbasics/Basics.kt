@@ -28,7 +28,14 @@ fun main(){
 //    print(result)
 
     val isEqual = 5 == 5
-    print("isEqual is $isEqual")
+//    print("isEqual is $isEqual")
+
+    var myNum = 5
+    myNum += 3
+    myNum++
+    --myNum
+
+    print(myNum)
 }
 
 // Normal function
