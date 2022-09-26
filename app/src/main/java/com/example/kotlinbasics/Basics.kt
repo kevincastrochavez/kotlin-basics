@@ -124,13 +124,25 @@ fun main(){
 //        }
 //    }
 //    myFuncction()
-    var addition = addUp(3, 4)
-    println(addition)
+//    var addition = addUp(3, 4)
+//    println(addition)
+
+//    NULLABLES
+
+    var name: String = "Dennis"
+    name = null
+
+    var nullableName: String? = "Kevin"
+    nullableName = null
+
+    if (nullableName != null) {
+
+    }
 }
 
-fun addUp(a: Int, b: Int): Int {
-    return a + b
-}
+//fun addUp(a: Int, b: Int): Int {
+//    return a + b
+//}
 
 //fun myFuncction() {
 //    println("Called function")
