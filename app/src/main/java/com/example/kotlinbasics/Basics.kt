@@ -19,28 +19,45 @@ package com.example.kotlinbasics
 //    }
 //}
 
-class Car() {
-    lateinit var owner: String
+//class Car() {
+//    lateinit var owner: String
+//
+//    val myBrand: String = "BWM"
+////        Custom getter
+//    get() {
+//        return field.toLowerCase()
+//    }
+//
+//    var myModel : String = "M5"
+////    private set
+//
+//    init {
+//        this.owner = "Kevin"
+//    }
+//}
 
-    val myBrand: String = "BWM"
-//        Custom getter
-    get() {
-        return field.toLowerCase()
-    }
-
-    var myModel : String = "M5"
-//    private set
-
-    init {
-        this.owner = "Kevin"
-    }
-}
+data class User(val id: Long, val name: String)
 
 // Special function that runs the application
 fun main(){
-    var myCar = Car()
-    println("Brand is ${myCar.myBrand}")
-    myCar.myModel =
+    val user1 = User(1, "Kevin")
+    val user2 = User(1, "Kevin")
+    println(user1.name)
+    println(user1.equals(user2))
+
+//    Copy object but not certain properties
+    val updatedUser = user1.copy(name = "Citlalli")
+    println(updatedUser.name)
+
+    println(updatedUser.component1())
+
+//    Deconstruction
+    val (id, name) = updatedUser
+    println(id)
+
+//    var myCar = Car()
+//    println("Brand is ${myCar.myBrand}")
+//    myCar.myModel =
 //    var kevin = Person("Kevin", "Castro", 25)
 ////    kevin.age = 25
 //    kevin.stateAge()
