@@ -1,7 +1,17 @@
 package com.example.kotlinbasics
 
+// Creating classes with default values and initializer
+class Person (firstName: String = "John", lastName: String = "Doe") {
+    init {
+        println("Person created $firstName $lastName")
+    }
+}
+
 // Special function that runs the application
 fun main(){
+    var kevin = Person("Kevin", "Castro")
+    var john = Person()
+    var parker = Person(lastName = "Parker")
 //    var myName = "Kevin Castro"
 //    myName = "Jared Castro"
 
@@ -140,13 +150,13 @@ fun main(){
 //    }
 
 
-//    ELVIS OPERATOR
-
-//    If it doesn't have a value, assigns the default after the colon
-    var nullableName: String? = "Kevin"
-    val name = nullableName ?: "Guest"
-
-//    val wifesAge = String? = user?.wife?.age ?: 0
+////    ELVIS OPERATOR
+//
+////    If it doesn't have a value, assigns the default after the colon
+//    var nullableName: String? = "Kevin"
+//    val name = nullableName ?: "Guest"
+//
+////    val wifesAge = String? = user?.wife?.age ?: 0
 
 }
 
