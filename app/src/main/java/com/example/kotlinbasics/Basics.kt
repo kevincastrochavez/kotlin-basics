@@ -2,6 +2,18 @@ package com.example.kotlinbasics
 
 // Creating classes with default values and initializer
 class Person (firstName: String = "John", lastName: String = "Doe") {
+    constructor(firstName: String, lastName: String, age: Int) : this(firstName, lastName) {
+       this.age = age
+    }
+
+//    Member variable
+    var age: Int? = null
+
+//    Member function - Method
+    fun stateAge() {
+        println("My age is $age")
+    }
+
     init {
         println("Person created $firstName $lastName")
     }
@@ -9,7 +21,9 @@ class Person (firstName: String = "John", lastName: String = "Doe") {
 
 // Special function that runs the application
 fun main(){
-    var kevin = Person("Kevin", "Castro")
+    var kevin = Person("Kevin", "Castro", 25)
+//    kevin.age = 25
+    kevin.stateAge()
     var john = Person()
     var parker = Person(lastName = "Parker")
 //    var myName = "Kevin Castro"
