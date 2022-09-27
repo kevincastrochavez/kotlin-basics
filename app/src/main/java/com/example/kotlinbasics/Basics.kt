@@ -1,31 +1,51 @@
 package com.example.kotlinbasics
 
 // Creating classes with default values and initializer
-class Person (firstName: String = "John", lastName: String = "Doe") {
-    constructor(firstName: String, lastName: String, age: Int) : this(firstName, lastName) {
-       this.age = age
+//class Person (firstName: String = "John", lastName: String = "Doe") {
+//    constructor(firstName: String, lastName: String, age: Int) : this(firstName, lastName) {
+//       this.age = age
+//    }
+//
+////    Member variable
+//    var age: Int? = null
+//
+////    Member function - Method
+//    fun stateAge() {
+//        println("My age is $age")
+//    }
+//
+//    init {
+//        println("Person created $firstName $lastName")
+//    }
+//}
+
+class Car() {
+    lateinit var owner: String
+
+    val myBrand: String = "BWM"
+//        Custom getter
+    get() {
+        return field.toLowerCase()
     }
 
-//    Member variable
-    var age: Int? = null
-
-//    Member function - Method
-    fun stateAge() {
-        println("My age is $age")
-    }
+    var myModel : String = "M5"
+//    private set
 
     init {
-        println("Person created $firstName $lastName")
+        this.owner = "Kevin"
     }
 }
 
 // Special function that runs the application
 fun main(){
-    var kevin = Person("Kevin", "Castro", 25)
-//    kevin.age = 25
-    kevin.stateAge()
-    var john = Person()
-    var parker = Person(lastName = "Parker")
+    var myCar = Car()
+    println("Brand is ${myCar.myBrand}")
+    myCar.myModel =
+//    var kevin = Person("Kevin", "Castro", 25)
+////    kevin.age = 25
+//    kevin.stateAge()
+//    var john = Person()
+//    var parker = Person(lastName = "Parker")
 //    var myName = "Kevin Castro"
 //    myName = "Jared Castro"
 
